@@ -47,6 +47,7 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+//test3
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
 			this.spannung = UAusRundI(this.strom, this.widerstand);
 		}
