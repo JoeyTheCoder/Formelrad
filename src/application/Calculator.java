@@ -5,6 +5,7 @@ package application;
  * @author Joel Sahli
  * @version 26.10.2018
  */
+//merge conflict
 public class Calculator {
 	private double leistung;
 	private double spannung;
@@ -47,9 +48,11 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.strom)) {
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
+
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
 			this.spannung = UAusRundI(this.strom, this.widerstand);
 		}
