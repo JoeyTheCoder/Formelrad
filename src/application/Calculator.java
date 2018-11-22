@@ -2,8 +2,8 @@ package application;
 
 /**
  * Berechnet das Formelrad
- * @author Peter Rutschmann
- * @version 13.09.2018
+ * @author Joel Sahli
+ * @version 26.10.2018
  */
 public class Calculator {
 	private double leistung;
@@ -49,7 +49,7 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
+	/* Hier die Methoden mit den Formlen hinzufï¿½gen
 	 */
 	
 }
