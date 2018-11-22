@@ -5,6 +5,7 @@ package application;
  * @author Joel Sahli
  * @version 26.10.2018
  */
+//merge conflict
 public class Calculator {
 	private double leistung;
 	private double spannung;
