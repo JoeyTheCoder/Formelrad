@@ -52,9 +52,11 @@ public class Calculator {
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.strom)) {
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
-
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
 			this.spannung = UAusRundI(this.strom, this.widerstand);
+		}
+		if (Double.isNaN(this.leistung) && Double.isNaN(this.widerstand)) {
+			this.widerstand = rAusUundI(this.spannung, this.strom);
 		}
 		if (Double.isNaN(this.spannung) && Double.isNaN(this.strom)) {
 			this.spannung = UAusRundP(this.widerstand, this.leistung);
@@ -62,9 +64,11 @@ public class Calculator {
 		}
 		if (Double.isNaN(this.spannung) && Double.isNaN(this.widerstand)) {
 			this.spannung = UAusPundI(this.leistung, this.strom);
+			this.widerstand = rAusPundI(this.leistung, this.strom);
 		}
 		if (Double.isNaN(this.strom) && Double.isNaN(this.widerstand)) {
 			this.strom = iAusPundU(this.leistung, this.spannung);
+			this.widerstand = rAusPundU(this.leistung, this.spannung);
 		}
 	}
 	
@@ -97,6 +101,20 @@ public class Calculator {
 		System.out.println("u/r");
 		return u / r;
 
+	}
+	//FEATURE R
+	public double rAusUundI(double u, double i) {
+		System.out.println("u/i");
+		return u / i;
+	}
+	public double rAusPundU(double p, double u) {
+		System.out.println("(u*u)/p");
+		return (u * u) / p;
+	}
+
+	public double rAusPundI(double p, double i) {
+		System.out.println("p/(i*i)");
+		return p / (i * i);
 	}
 
 
