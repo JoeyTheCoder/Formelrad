@@ -65,6 +65,7 @@ public class Calculator {
 		System.out.println("r*i");
 		return r * i;
 	}
+	//test
 	public double UAusRundP(double r, double p) {
 		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p / r);
