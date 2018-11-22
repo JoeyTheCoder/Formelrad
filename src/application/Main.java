@@ -2,6 +2,8 @@ package application;
 
 import java.io.FileInputStream;
 
+import com.sun.prism.paint.Color;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -19,13 +21,16 @@ import javafx.scene.text.Font;
  * @version 26.10.2018
  */
 public class Main extends Application {
+	private int counter = 0;
+
 	@Override
 	public void start(Stage primaryStage) {
+
 		try {
 			Pane root = new Pane();
 
 			// Creating an image
-			Image image = new Image(getClass().getResourceAsStream("formelradelektronik.gif"));	
+			Image image = new Image(new FileInputStream("bin\\application\\formelradelektronik.gif"));
 			ImageView imageView = new ImageView(image);
 			imageView.setX(10);
 			imageView.setY(10);
@@ -78,36 +83,66 @@ public class Main extends Application {
 			btnBerechnen.relocate(100, 445);
 			btnBerechnen.setText("Berechnen");
 			root.getChildren().add(btnBerechnen);
-			
+
 			btnBerechnen.setOnAction(e -> {
-				double power = 0.0;
-				double tension = 0.0;
-				double current = 0.0;
-				double resistence = 0.0;
-				if(txLeistung.getText().isEmpty()==false) {
-					power = Double.parseDouble(txLeistung.getText());
+
+				txLeistung.setStyle("-fx-text-fill: black;");
+				txSpannung.setStyle("-fx-text-fill: black;");
+				txWiderstand.setStyle("-fx-text-fill: black;");
+				txStrom.setStyle("-fx-text-fill: black;");
+
+				if (txLeistung.getText().trim().isEmpty()) {
+					txLeistung.setText("NaN");
+					txLeistung.setStyle("-fx-text-fill: red;");
+				} else {
+					this.counter++;
 				}
-				if(txSpannung.getText().isEmpty()==false) {
-					tension = Double.parseDouble(txSpannung.getText());
+
+				if (txStrom.getText().trim().isEmpty()) {
+					txStrom.setText("NaN");
+					txStrom.setStyle("-fx-text-fill: red;");
+				} else {
+					this.counter++;
 				}
-				if(txStrom.getText().isEmpty()==false) {
-					current = Double.parseDouble(txStrom.getText());
+
+				if (txWiderstand.getText().trim().isEmpty()) {
+					txWiderstand.setText("NaN");
+					txWiderstand.setStyle("-fx-text-fill: red;");
+				} else {
+					this.counter++;
 				}
-				if(txWiderstand.getText().isEmpty()==false) {
-					resistence = Double.parseDouble(txWiderstand.getText());
+
+				if (txSpannung.getText().trim().isEmpty()) {
+					txSpannung.setText("NaN");
+					txSpannung.setStyle("-fx-text-fill: red;");
+
+				} else {
+					this.counter++;
 				}
-				Calculator myCalculator = new Calculator(
-						power, tension, current, resistence);
+				if (this.counter > 2) {
+					System.err.println("Mehr als zwei Zahlen angegeben bitte genau nur 2 Zahlen angeben !");
+					this.counter = 0;
+					txLeistung.setStyle("-fx-text-fill: black;");
+					txSpannung.setStyle("-fx-text-fill: black;");
+					txWiderstand.setStyle("-fx-text-fill: black;");
+					txStrom.setStyle("-fx-text-fill: black;");
+					return;
+				}
+
+				Calculator myCalculator = new Calculator(Double.parseDouble(txLeistung.getText()),
+						Double.parseDouble(txSpannung.getText()), Double.parseDouble(txStrom.getText()),
+						Double.parseDouble(txWiderstand.getText()));
 				System.out.print("Vorher:  ");
 				System.out.println(myCalculator.toString());
 				myCalculator.calculate();
 				System.out.print("Nachher: ");
 				System.out.println(myCalculator.toString());
-					
+
 				txLeistung.setText(Double.toString(myCalculator.getLeistung()));
 				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 				txStrom.setText(Double.toString(myCalculator.getStrom()));
 				txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+				this.counter = 0;
 			});
 
 			Scene scene = new Scene(root, 330, 490);
