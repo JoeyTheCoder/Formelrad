@@ -47,6 +47,9 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+		if (Double.isNaN(this.leistung) && Double.isNaN(this.strom)) {
+			this.strom = iAusUundR(this.spannung, this.widerstand);
+		}
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
 			this.spannung = UAusRundI(this.strom, this.widerstand);
 		}
@@ -57,18 +60,19 @@ public class Calculator {
 		if (Double.isNaN(this.spannung) && Double.isNaN(this.widerstand)) {
 			this.spannung = UAusPundI(this.leistung, this.strom);
 		}
+		if (Double.isNaN(this.strom) && Double.isNaN(this.widerstand)) {
+			this.strom = iAusPundU(this.leistung, this.spannung);
+		}
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
-//test5
+	//FEATURE U
 	public double UAusRundI(double r, double i) {
 		System.out.println("r*i");
 		return r * i;
 	}
-	//test
-	//test2
-	//merge conflict
+
 	public double UAusRundP(double r, double p) {
 		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p / r);
@@ -77,5 +81,20 @@ public class Calculator {
 		System.out.println("p/i");
 		return p / i;
 	}
+	//FEATURE I
+	public double iAusPundU(double p, double u) {
+		System.out.println("p/u");
+		return p / u;
+	}
+	public double iAusPundR(double p, double r) {
+		System.out.println("Math.sqrt(p/r)");
+		return Math.sqrt(p / r);
+	}
+	public double iAusUundR(double u, double r) {
+		System.out.println("u/r");
+		return u / r;
+
+	}
+
 
 }
