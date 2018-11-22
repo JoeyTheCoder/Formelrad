@@ -61,6 +61,7 @@ public class Calculator {
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
+//test5
 	public double UAusRundI(double r, double i) {
 		System.out.println("r*i");
 		return r * i;
