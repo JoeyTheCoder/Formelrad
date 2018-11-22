@@ -63,11 +63,13 @@ public class Calculator {
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
 	 */
+//test5
 	public double UAusRundI(double r, double i) {
 		System.out.println("r*i");
 		return r * i;
 	}
 	//test
+	//test2
 	public double UAusRundP(double r, double p) {
 		System.out.println("Math.sqrt(p/r)");
 		return Math.sqrt(p / r);
