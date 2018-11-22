@@ -48,14 +48,16 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
-
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.strom)) {
+			this.leistung = pAusUundR(this.spannung, this.widerstand);
 			this.strom = iAusUundR(this.spannung, this.widerstand);
 		}
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.spannung)) {
+			this.leistung = pAusRundI(this.strom, this.widerstand);
 			this.spannung = UAusRundI(this.strom, this.widerstand);
 		}
 		if (Double.isNaN(this.leistung) && Double.isNaN(this.widerstand)) {
+			this.leistung = pAusUundI(this.spannung, this.strom);
 			this.widerstand = rAusUundI(this.spannung, this.strom);
 		}
 		if (Double.isNaN(this.spannung) && Double.isNaN(this.strom)) {
@@ -116,6 +118,20 @@ public class Calculator {
 		System.out.println("p/(i*i)");
 		return p / (i * i);
 	}
+	//FEATURE P
+	public double pAusUundR(double u, double r) {
+		System.out.println("(u*u)/r");
+		return (u * u) / r;
+	}
+	public double pAusUundI(double u, double i) {
+		System.out.println("u*i");
+		return u * i;
+	}
+	public double pAusRundI(double i, double r) {
+		System.out.println("(i*i)*r");
+		return (i * i) * r;
+	}
+
 
 
 }
