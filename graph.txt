@@ -1,87 +1,142 @@
-* commit cd7f0df5ea3419ae380c50b3a8656a88c1392a06 (HEAD -> FeatureI, origin/FeatureI)
-| Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
-| Date:   Thu Nov 22 19:05:30 2018 +0100
-| 
-|     berechnen Stromstärke I implementiert
-|   
-*   commit 529e98aa1100e92d2194ef4ba2b39e47890ff1aa
-|\  Merge: eb62bdc 3738f61
-| | Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
-| | Date:   Thu Nov 22 18:28:37 2018 +0100
+*   commit 8098f32b76963599c00b8cbb9a15979a9069dfd9 (HEAD -> master, origin/master, origin/HEAD)
+|\  Merge: 6ab10c2 708004e
+| | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | Date:   Thu Nov 22 19:22:57 2018 +0100
 | | 
-| |     Merge branch 'FeatureI' of https://github.com/JoeyTheCoder/Formelrad into FeatureI
-| | 
-* | commit eb62bdc3a5117a8d565b51abb77c2ebbc0987237
-| | Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
-| | Date:   Thu Nov 22 18:26:25 2018 +0100
-| | 
-| |     provoke merge conflict
+| |     Merge pull request #9 from JoeyTheCoder/FeatureP
 | |     
-| | *   commit 631bc8293585c0ca5e8702192686bf3b332b5565 (origin/master, origin/HEAD)
-| | |\  Merge: 504e939 f6adb86
+| |     Leistung P berechnen implementiert
+| | 
+| * commit 708004e6de53b11bfec7308d24427e91462681d1 (origin/FeatureP, FeatureP)
+|/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+|   Date:   Thu Nov 22 19:22:24 2018 +0100
+|   
+|       Leistung P berechnen implementiert
+|   
+*   commit 6ab10c212f7b069eb1d276b5dfba9a1e5b8f126c
+|\  Merge: 5e92584 9372127
+| | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | Date:   Thu Nov 22 19:20:15 2018 +0100
+| | 
+| |     Merge pull request #8 from JoeyTheCoder/FeatureR
+| |     
+| |     Strom-Widerstand berechnen implementiert
+| | 
+| * commit 9372127b223dd4ba31fd369bdcc04ea3ffb196a8 (origin/FeatureR, FeatureR)
+|/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+|   Date:   Thu Nov 22 19:19:52 2018 +0100
+|   
+|       Strom-Widerstand berechnen implementiert
+|   
+*   commit 5e925845a90d9b0ca9124f8186bd455cf14360fe
+|\  Merge: b47363d f2409de
+| | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | Date:   Thu Nov 22 19:09:44 2018 +0100
+| | 
+| |     Merge pull request #7 from JoeyTheCoder/FeatureI
+| |     
+| |     berechnen Stromstärke I implementiert
+| |   
+| *   commit f2409de9a682c191a8b7257c927beadcb6ec72ba (origin/FeatureI, FeatureI)
+| |\  Merge: cd7f0df b47363d
+| |/  Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+|/|   Date:   Thu Nov 22 19:08:55 2018 +0100
+| |   
+| |       Merge branch 'master' into FeatureI
+| |   
+* |   commit b47363d38ae3e2f058e6b1629c1e6d662864eb22
+|\ \  Merge: 631bc82 529e98a
+| | | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | | Date:   Thu Nov 22 18:29:54 2018 +0100
+| | | 
+| | |     Merge pull request #6 from JoeyTheCoder/FeatureI
+| | |     
+| | |     Feature i
+| | |   
+* | |   commit 631bc8293585c0ca5e8702192686bf3b332b5565
+|\ \ \  Merge: 504e939 f6adb86
 | | | | Author: Sahli Joel <Joel.Sahli@swisscom.com>
 | | | | Date:   Thu Nov 22 18:27:38 2018 +0100
 | | | | 
 | | | |     Merge branch 'master' of https://github.com/JoeyTheCoder/Formelrad
 | | | |   
-| | | *   commit f6adb86095768437a82de8d26328f0f4bfd1d4b8
-| | | |\  Merge: 5df07ee 3738f61
-| | |_|/  Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
-| |/| |   Date:   Thu Nov 22 18:23:38 2018 +0100
+| * | |   commit f6adb86095768437a82de8d26328f0f4bfd1d4b8
+| |\ \ \  Merge: 5df07ee 3738f61
+| | | | | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | | | | Date:   Thu Nov 22 18:23:38 2018 +0100
+| | | | | 
+| | | | |     Merge pull request #5 from JoeyTheCoder/FeatureI
+| | | | |     
+| | | | |     Feature i
+| | | | |   
+| * | | |   commit 5df07ee28ec7fe93dc39dd61742d7e85f607def3
+| |\ \ \ \  Merge: 2f4e724 c2c901e
+| | | | | | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | | | | | Date:   Thu Nov 22 18:21:41 2018 +0100
+| | | | | | 
+| | | | | |     Merge pull request #4 from JoeyTheCoder2/patch-1
+| | | | | |     
+| | | | | |     Create test
+| | | | | | 
+| | * | | | commit c2c901ea536627dc6cabec1af7d20003e5444975
+| |/ / / /  Author: JoeyTheCoder2 <45269093+JoeyTheCoder2@users.noreply.github.com>
+| | | | |   Date:   Thu Nov 22 18:15:06 2018 +0100
+| | | | |   
+| | | | |       Create test
+| | | | | 
+* | | | | commit 504e93940acf05dbdbb164a99ea9bbf0ebb95344
+| | | | | Author: Sahli Joel <Joel.Sahli@swisscom.com>
+| | | | | Date:   Thu Nov 22 18:26:43 2018 +0100
+| | | | | 
+| | | | |     merge
+| | | | | 
+* | | | | commit 669901189a76b97c7b991f86a6a5eaf3781bd4cf
+|/ / / /  Author: Sahli Joel <Joel.Sahli@swisscom.com>
+| | | |   Date:   Thu Nov 22 18:09:23 2018 +0100
 | | | |   
-| | | |       Merge pull request #5 from JoeyTheCoder/FeatureI
-| | | |       
-| | | |       Feature i
+| | | |       test 3
+| | | |   
+* | | |   commit 2f4e724cb83421f8f9b2bc4f9704377050fe3708
+|\ \ \ \  Merge: b18e466 6b57e3a
+| | | | | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
+| | | | | Date:   Thu Nov 22 17:59:21 2018 +0100
+| | | | | 
+| | | | |     Merge pull request #3 from JoeyTheCoder/FeatureI
+| | | | |     
+| | | | |     user test
+| | | | | 
+| | | | * commit cd7f0df5ea3419ae380c50b3a8656a88c1392a06
+| | | |/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+| | | |   Date:   Thu Nov 22 19:05:30 2018 +0100
+| | | |   
+| | | |       berechnen Stromstärke I implementiert
+| | | |   
+| | | *   commit 529e98aa1100e92d2194ef4ba2b39e47890ff1aa
+| | | |\  Merge: eb62bdc 3738f61
+| | | |/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+| | |/|   Date:   Thu Nov 22 18:28:37 2018 +0100
+| | | |   
+| | | |       Merge branch 'FeatureI' of https://github.com/JoeyTheCoder/Formelrad into FeatureI
 | | | | 
-| * | | commit 3738f6141765279aea9b5f8141edf8f967c8ee6e
-|/ / /  Author: Sahli Joel <Joel.Sahli@swisscom.com>
-| | |   Date:   Thu Nov 22 18:19:50 2018 +0100
-| | |   
-| | |       user test
-| | | 
-* | | commit 34c49cb51c90665e497bd6f446f100c31fa2b78f
-| | | Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
-| | | Date:   Thu Nov 22 18:01:11 2018 +0100
-| | | 
-| | |     test2
-| | |   
-| | *   commit 5df07ee28ec7fe93dc39dd61742d7e85f607def3
-| | |\  Merge: 2f4e724 c2c901e
-| | | | Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
-| | | | Date:   Thu Nov 22 18:21:41 2018 +0100
+| | * | commit 3738f6141765279aea9b5f8141edf8f967c8ee6e
+| | | | Author: Sahli Joel <Joel.Sahli@swisscom.com>
+| | | | Date:   Thu Nov 22 18:19:50 2018 +0100
 | | | | 
-| | | |     Merge pull request #4 from JoeyTheCoder2/patch-1
-| | | |     
-| | | |     Create test
+| | | |     user test
 | | | | 
-| | | * commit c2c901ea536627dc6cabec1af7d20003e5444975
-| | |/  Author: JoeyTheCoder2 <45269093+JoeyTheCoder2@users.noreply.github.com>
-| | |   Date:   Thu Nov 22 18:15:06 2018 +0100
+| | | * commit eb62bdc3a5117a8d565b51abb77c2ebbc0987237
+| | |/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+| | |   Date:   Thu Nov 22 18:26:25 2018 +0100
 | | |   
-| | |       Create test
+| | |       provoke merge conflict
 | | | 
-| * | commit 504e93940acf05dbdbb164a99ea9bbf0ebb95344
-| | | Author: Sahli Joel <Joel.Sahli@swisscom.com>
-| | | Date:   Thu Nov 22 18:26:43 2018 +0100
-| | | 
-| | |     merge
-| | | 
-| * | commit 669901189a76b97c7b991f86a6a5eaf3781bd4cf
-| |/  Author: Sahli Joel <Joel.Sahli@swisscom.com>
-| |   Date:   Thu Nov 22 18:09:23 2018 +0100
+| | * commit 34c49cb51c90665e497bd6f446f100c31fa2b78f
+| |/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
+| |   Date:   Thu Nov 22 18:01:11 2018 +0100
 | |   
-| |       test 3
-| |   
-| *   commit 2f4e724cb83421f8f9b2bc4f9704377050fe3708
-| |\  Merge: b18e466 6b57e3a
-| |/  Author: JoeyTheCoder <35302252+JoeyTheCoder@users.noreply.github.com>
-|/|   Date:   Thu Nov 22 17:59:21 2018 +0100
-| |   
-| |       Merge pull request #3 from JoeyTheCoder/FeatureI
-| |       
-| |       user test
+| |       test2
 | | 
-* | commit 6b57e3acf767f41e1746157c83c78466877f1c71
+| * commit 6b57e3acf767f41e1746157c83c78466877f1c71
 |/  Author: JoeyTheCoder2 <JoeyTheCoder@users.noreply.github.com>
 |   Date:   Thu Nov 22 17:58:21 2018 +0100
 |   
@@ -117,7 +172,7 @@
 |   
 |       Code Konventionen einhalten
 | 
-* commit 0c188f9afb81448973a8cafd4619a59e6f2a613a (master)
+* commit 0c188f9afb81448973a8cafd4619a59e6f2a613a
 | Author: joel.sahli <JoeyTheCoder@users.noreply.github.com>
 | Date:   Thu Nov 22 16:22:53 2018 +0100
 | 
